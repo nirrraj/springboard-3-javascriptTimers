@@ -40,7 +40,6 @@ function randomGame(){
     let intervalId = setInterval(function (){
         runCount++;
         randomNum = Math.random();
-        console.log(randomNum);
         if(randomNum > .75){
             console.log(`It took ${runCount} tries to get a random number over .75`);
             clearInterval(intervalId);
